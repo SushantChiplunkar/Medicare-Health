@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Medicare Health</string>
+    <string name="main_screen_desc">Now you can effortlessly find your needy medical equipment on our app</string>
+    <string name="login_title">Let\'s Sign you in.</string>
+    <string name="sign_up_screen_title">Let\'s Sign you up</string>
+    <string name="logout_app">Logout</string>
+</resources>
