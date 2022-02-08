@@ -106,4 +106,14 @@ public class HomeScreen extends AppCompatActivity {
         startActivity(new Intent(this, MainActivity.class));
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this).setMessage("Are you sure, you want to exit")
+                .setPositiveButton("Yes",(dialogInterface, i) -> {
+                    HomeScreen.this.finish();
+                }).setNegativeButton("No",(dialogInterface, i) -> {
+            dialogInterface.dismiss();
+        }).setCancelable(false).show();
+    }
 }

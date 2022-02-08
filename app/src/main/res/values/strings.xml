@@ -4,4 +4,6 @@
     <string name="login_title">Let\'s Sign you in.</string>
     <string name="sign_up_screen_title">Let\'s Sign you up</string>
     <string name="logout_app">Logout</string>
+    <string name="verification_send_message">We will send you a <font fgcolor='#808080'>One Time Password</font> on your phone</string>
+    <string name="verification_receive_message">You will get a OTP via <font fgcolor='#808080'>SMS</font></string>
 </resources>

@@ -32,6 +32,10 @@ public class LoginViewModel extends AndroidViewModel {
         return s -> password.postValue(s.toString());
     }
 
+    public LiveData<User> userExistOrNot(){
+        return userRepository.getUserFromEmailOrMobileAsUsername(userName.getValue());
+    }
+
     public boolean isValidCredentials(){
         return !userName.getValue().isEmpty() && !password.getValue().isEmpty();
     }

@@ -2,4 +2,5 @@
 <resources>
     <string name="main_screen_desc">Now you can effortlessly find your needy medical equipment on our app</string>
     <string name="login_title">Let\'s Sign you in.</string>
+    <string name="verification_send_message">We will send you a One</string>
 </resources>

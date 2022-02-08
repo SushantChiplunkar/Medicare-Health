@@ -27,6 +27,22 @@ public class UserRepository {
         return userDao.getUserFromLogin(userName,passKey);
     }
 
+    /*public LiveData<User> getUserFromEmail(String emailId){
+        return userDao.getUserFromEmailId(emailId);
+    }
+
+    public LiveData<User> getUserFromMobile(String mobileNo){
+        return userDao.getUserFromMobile(mobileNo);
+    }*/
+
+    public LiveData<User> getUserFromEmailOrMobileAsUsername(String userName){
+        return userDao.getUserFromUsernameAsMobileOrEmail(userName);
+    }
+
+    public LiveData<User> getUserFromUserId(int userId){
+        return userDao.getUserDataFromId(userId);
+    }
+
     public LiveData<List<User>> getUsers(){
         return users;
     }

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.test.medicarehealth">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".MedicalHealthApplication"
@@ -13,19 +13,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicareHealth">
         <activity
+            android:name=".view.OTPVerificationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".view.ChangePasswordScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:parentActivityName=".view.SplashScreen"/>
+            android:parentActivityName=".view.SplashScreen" />
         <activity
             android:name=".view.DetailScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".view.HomeScreen"/>
         <activity
             android:name=".view.HomeScreen"
             android:exported="false" />
         <activity
             android:name=".view.SignupScreen"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".view.LoginScreen"
             android:exported="false" />

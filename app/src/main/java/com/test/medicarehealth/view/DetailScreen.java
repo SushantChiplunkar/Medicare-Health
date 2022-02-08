@@ -34,9 +34,14 @@ public class DetailScreen extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_detail_screen);
         binding.setLifecycleOwner(this);
 
+        setSupportActionBar(binding.detailScreenToolbar.toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.return_arrow);
+        getSupportActionBar().setTitle("Article Details");
         if (getIntent()!=null && getIntent().hasExtra(HomeScreen.DATA)){
             MutableLiveData<Article> article = new MutableLiveData<>();
             article.setValue(getIntent().getParcelableExtra(HomeScreen.DATA));
+            //getSupportActionBar().setTitle(article.getValue().getNewsSite());
             articleLiveData = article;
         }
 

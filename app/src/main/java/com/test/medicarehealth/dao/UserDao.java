@@ -30,6 +30,15 @@ public interface UserDao {
     @Query("Select * from user_table where id=:id LIMIT 1")
     LiveData<User> getUserDataFromId(int id);
 
-    @Query("Select * from user_table where mobileNo=:mobile_no and password=:passkey")
+    @Query("Select * from user_table where mobileNo=:mobile_no")
+    LiveData<User> getUserFromMobile(String mobile_no);
+
+    @Query("Select * from user_table where email=:email_id")
+    LiveData<User> getUserFromEmailId(String email_id);
+
+    @Query("Select * from user_table where userName=:given_user_name")
+    LiveData<User> getUserFromUsernameAsMobileOrEmail(String given_user_name);
+
+    @Query("Select * from user_table where userName=:mobile_no and password=:passkey")
     LiveData<User> getUserFromLogin(String mobile_no,String passkey);
 }

@@ -101,7 +101,8 @@
                     app:boxCornerRadiusBottomStart="10dp"
                     app:boxCornerRadiusTopEnd="10dp"
                     app:boxCornerRadiusTopStart="10dp"
-                    android:layout_marginTop="16dp">
+                    android:layout_marginTop="16dp"
+                    app:prefixText="+91">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
